@@ -25,7 +25,7 @@ describe('유닛 테스트 101', () => {
   it('서버에 POST /upper 요청에 body를 실어 보내면 응답은 대문자로 돌려줍니다', () => {
     return request(app)
       .post('/upper')
-      .send('"coDeStaTes"')
+      .send('"inHAUniversity"')
       .set('Content-Type', 'application/json')
       .then(res => {
         expect(res.body).to.be.equal(FILL_ME_IN)
@@ -35,7 +35,7 @@ describe('유닛 테스트 101', () => {
   it('서버에 POST /lower 요청에 body를 실어 보내면 응답은 소문자로 돌려줍니다', () => {
     return request(app)
       .post('/lower')
-      .send('"coDeStaTes"')
+      .send('"inHAUniversity"')
       .set('Content-Type', 'application/json')
       .then(res => {
         expect(res.body).to.be.equal(FILL_ME_IN)
